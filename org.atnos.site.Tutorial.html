@@ -318,7 +318,6 @@ case class Delete(key: String) extends KVStore[Unit]
 <h3 id="create-smart-constructors-using-eff.send">Create smart constructors using <code class="prettyprint">Eff.send</code></h3>
 <p>These methods will let you create <code class="prettyprint">Eff</code> values for your key-value store “Effect”:</p>
 <pre><code class="prettyprint">import org.atnos.eff._
-import cats.implicits._
 
 // T |= R is an alias for MemberIn[T, R]
 // stating that effects of type T[_] can be injected in the effect stack R
